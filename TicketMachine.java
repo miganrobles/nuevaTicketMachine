@@ -82,8 +82,9 @@ public class TicketMachine
             balance = balance - price;
         }
         else {
-            System.out.println("You must insert at least: " +
-                               (price - balance) + " more cents.");
+            int amountLeftToPlay;
+            amountLeftToPlay = (price - balance);
+            System.out.println("El dinero que falta para comprar el ticket es " + amountLeftToPlay + " cents.");
                     
         }
     }
